@@ -1,0 +1,54 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: white;
+    margin: 0;
+    padding: 0;
+}
+
+section{
+    width: 100px;
+    height:200px;
+    padding: 24px 32px 36px;
+    background-color: black;
+    text-align: center;
+}
+.clase1{
+
+}
+
+.visitado{
+    color: rgb(35, 214, 214);
+    padding: auto;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.visitado:visited{
+    color: rgb(141, 90, 184);
+    padding: auto;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+
+p:target {
+    background-color: rgb(255, 123, 244);
+  }
+  
+  /* Agrega un pseudo-elemento dentro del elemento de destino */
+  p:target::before {
+    font: 70% sans-serif;
+    content: "►";
+    color: rgb(35, 204, 204);
+    margin-right: 0.25em;
+  }
+  
+  /* Estilo de elementos en cursiva dentro del elemento de destino */
+  p:target i {
+    color: red;
+  }
